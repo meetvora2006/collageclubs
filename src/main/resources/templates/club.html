@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myangularapp" ng-controller="clubpage">
+    <head>
+        <title>Club</title>
+        <link href='./css/style.css' rel="stylesheet" type="text/css" />
+         <link href='./css/ng-wig.css' rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/angular.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+         <script  type="text/javascript" src="./js/ng-wig.js"></script>
+        <script type="text/javascript" src="./js/app.js"></script>
+    </head>
+    <body>
+        <form id="addcollege-form"  method="post" role="form" style="display: block;">
+            <div class="form-group">
+                <input type="text" name="club"  ng-model="club" tabindex="1" class="form-control" placeholder="club name"/>
+            </div>         
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" ng-click="addclub();"  class="form-control btn btn-register" value="Add Club"/>
+                    </div>
+                </div>
+            </div>
+        </form> 
+        <div ng-repeat="clb in Myclbdata.addclubs"><h2>{{clb.clbName}}</h2> <h3 ng-click="goToAboutClb(clb.id)"> About Page</h3> <h3 ng-click="clubgallery(clb.id)">Image Gallery</h3></div>          
+    </body>
+</html>

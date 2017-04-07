@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myangularfrontapp" ng-controller="allclubpage">
+    <head>
+        <title>Colleges</title>
+         <link href='./css/style.css' rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/angular.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/frontapp.js"></script>
+    </head>
+    <body>
+        <div class="club_block_row">
+        
+         <div ng-repeat="clb in MyAllclbdata.addclubs" class="club_block"><h2>{{clb.clbName}}</h2>
+             <h3 ng-click="goToAboutClbPage(clb.id)"> About Page</h3>
+             <h3 ng-click="goTogalleryClbPage(clb.id)">Image Gallery</h3>
+             <h3 ng-click="goToreviewClbPage(clb.id)">Reviews</h3>
+         </div> 
+       
+            </div>
+    </body>
+</html>

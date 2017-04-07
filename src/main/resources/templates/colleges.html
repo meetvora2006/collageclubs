@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myangularapp" ng-controller="myangularController">
+    <head>
+        <title>Colleges</title>
+        <link href='./css/style.css' rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="./js/angular.js"></script>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/addcollege.js"></script>
+    </head>
+
+    <body>
+        <form id="addcollege-form"  method="post" role="form" style="display: block;">
+            <div class="form-group">
+                <input type="text" name="college"  ng-model="college" tabindex="1" class="form-control" placeholder="college name"/>
+            </div>         
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" ng-click="addcollege();"  class="form-control btn btn-register" value="Add College"/>
+                    </div>
+                </div>
+            </div>
+        </form> 
+        
+         <h2 ng-repeat="college in Mydata.addcolleges">{{college.collegeName}}</h2>    
+         
+    </body>
+</html>

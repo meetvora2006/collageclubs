@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="demo" ng-controller="main">
+    <head>
+        <title>ng-image-gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href='./css/style.css' rel="stylesheet" type="text/css" />
+        <link href='./css/ng-image-gallery.css' rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>      
+        <script type="text/javascript" src="./js/angular.js"></script>
+        <script type="text/javascript" src="./js/angular-animate.js"></script>
+        <script type="text/javascript" src="./js/hammer.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="./js/frontapp.js"></script>
+        <script type="text/javascript" src="./js/ng-image-gallery.js"></script>		
+    </head>
+    <body>
+
+  
+    <ng-image-gallery images="fgaimages" methods="methods" on-open="opened();" on-close="closed();"></ng-image-gallery>
+
+</body>
+</html>
