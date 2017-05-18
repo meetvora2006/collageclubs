@@ -54,15 +54,15 @@ body {
 	border-color: #ccc;
 }
 .btn-login {
-	background-color: #59B2E0;
-	outline: none;
-	color: #fff;
-	font-size: 14px;
-	height: auto;
-	font-weight: normal;
-	padding: 14px 0;
-	text-transform: uppercase;
-	border-color: #59B2E6;
+	background-color: #59B2E0 !important;
+	outline: none !important;
+	color: #fff !important;
+	font-size: 14px !important;
+	height: auto !important;
+	font-weight: normal !important;
+	padding: 14px 0 !important;
+	text-transform: uppercase !important;
+	border-color: #59B2E6 !important;
 }
 .btn-login:hover,
 .btn-login:focus {
@@ -81,15 +81,15 @@ body {
 }
 
 .btn-register {
-	background-color: #1CB94E;
-	outline: none;
-	color: #fff;
-	font-size: 14px;
-	height: auto;
-	font-weight: normal;
-	padding: 14px 0;
-	text-transform: uppercase;
-	border-color: #1CB94A;
+	background-color: #1CB94E !important;
+	outline: none !important;
+	color: #fff !important;
+	font-size: 14px !important;
+	height: auto !important;
+	font-weight: normal !important;
+	padding: 14px 0 !important;
+	text-transform: uppercase !important;
+	border-color: #1CB94A !important;
 }
 .btn-register:hover,
 .btn-register:focus {

@@ -39,7 +39,8 @@ myangularapp.controller("myangularController", function ($scope, $http) {
                 uniId: $scope.myuniid
             }).
                     success(function (data, status, headers) {
-                        alert("Task added");
+                        alert("Ragistration sucessfuly done");
+                        window.location.href = '/';
 
                     });
         }
@@ -129,9 +130,8 @@ myangularapp.controller('clubdetailpage', function ($scope, $http, $sce) {
         if ($scope.AboutText === '') {
             alert("add club description");
         } else {
-            $http.put('http://localhost:8080/addclubs/' + MyClbId, {
-                clbAbout: $sce.trustAsHtml($scope.AboutText)
-            }).success(function (data, status, headers) {
+            $http.put('http://localhost:8080/addclubs/'+ MyClbId,{clbAbout: $scope.AboutText}
+            ).success(function (data, status, headers) {
                 alert("saved");
             });
         }
